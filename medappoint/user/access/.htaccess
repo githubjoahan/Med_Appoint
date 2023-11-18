@@ -1,0 +1,12 @@
+# Activar el módulo de reescritura de URLs
+RewriteEngine On
+
+# Ocultar extensión .php
+# Si se solicita una URL sin extensión, añadir .php
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule !.*\.php$ %{REQUEST_URI}.php [L]
+
+# Ocultar extensión .html
+# Si se solicita una URL sin extensión, añadir .html
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule !.*\.html$ %{REQUEST_URI}.html [L]

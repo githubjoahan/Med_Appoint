@@ -1,0 +1,20 @@
+1. CREAR LA Base de Datos CON EL MISMO NOMBRE (my-appointments) EN phpmyadmin
+
+
+
+ROLES
+===================================
+ADMINISTRADOR
+user: nes@gmail.com
+password: 123456
+
+==============================================
+DOCTOR
+user: mayu@gmail.com
+password: 123456
+
+
+PACIENTE
+=====================================================
+user:margot@gmail.com
+password: 123456
