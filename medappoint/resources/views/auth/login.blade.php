@@ -1,7 +1,7 @@
 @extends('layouts.form')
 
-@section('title', '')
-@section('subtitle', '')
+@section('title', 'Med Appoint')
+@section('subtitle', 'Ingresa tus datos para iniciar sesión')
 
 
 @section('content')
@@ -41,9 +41,35 @@
                         <div class="g-recaptcha" data-sitekey="{{ env('RECAPTCHA_SITE_KEY') }}">
                         </div>
                         
-                        <!-- recordar sesion -->
+                        <div class="custom-control custom-control-alternative custom-checkbox">
+                            <input name="remember" class="custom-control-input" id="remember" type="checkbox" {{ old('remember') ? 'checked' : '' }}>
+                            <label class="custom-control-label" for="remember">
+                                <span class="text-muted">Recordar sesión</span>
+                            </label>
+                        </div>
+                        <div class="row mt-3">
+           
+                 <!--<div class="col-6 text-right">
+                    Corrige la ruta del enlace para la recuperación de contraseña  
+                    <a href="{{ route('password.request') }}" class="text-light">
+                        <small>Olvidaste tu contraseña?</small>
+                    </a>
+                </div>  -->
+
+                <div class="col-6 text-right">
+                    <!-- Corrige la ruta del enlace para la recuperación de contraseña -->
+                    <a href="https://myappointment.com.mx/user/access/reset" class="text-light">
+                        <small>Olvidaste tu contraseña?</small>
+                    </a>
+                </div>
 
 
+                <div class="col-6 text-right">
+                    <a href="{{ route('register') }}" class="text-light">
+                        <small>¿Aún no te has registrado?</small>
+                    </a>
+                </div>
+            </div>
                         <div class="text-center">
                             <button type="submit" class="btn btn-primary my-4">Ingresar</button>
                         </div>
@@ -53,6 +79,7 @@
 
             
             <!-- funcion poder restablecer contraseñas -->
+            
             
            
       </div>

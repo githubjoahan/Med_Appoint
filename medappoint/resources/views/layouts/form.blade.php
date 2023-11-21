@@ -25,7 +25,10 @@
             <div class="container px-4">
                 
                 
-            <!-- Logo del sistema web  -->
+            <a class="navbar-brand" href="{{ url('/')}}">
+                    <img src="{{ asset('img/brand/5.png') }}" />
+                </a>
+
 
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main"
@@ -54,8 +57,23 @@
                     <!-- Navbar items -->
                      
 
-                    <!-- botones para gegistrar  -->
+                    <ul class="navbar-nav ml-auto">
 
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-icon" href="{{ route('register') }}">
+                                <i class="ni ni-circle-08"></i>
+                                <span class="nav-link-inner--text">Registro</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-icon" href="{{ route('login') }}">
+                                <i class="ni ni-key-25"></i>
+                                <span class="nav-link-inner--text">Ingresar</span>
+                            </a>
+                        </li>
+
+                    </ul>
+    
 
 
                 </div>
