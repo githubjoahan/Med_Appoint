@@ -29,7 +29,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                                 </div>
-                                <input class="form-control" placeholder="Ingresa tu correo electronico" type="email" name="email" value="{{ old('email') }}" required autofocus>
+                                <input class="form-control" placeholder="Ingresa su correo electronico" type="email" name="email" value="{{ old('email') }}" required autofocus>
 
                             </div>
                         </div>
@@ -38,7 +38,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                                 </div>
-                                <input class="form-control" placeholder="Ingresa tu contraseña" type="password" name="password" required>
+                                <input class="form-control" placeholder="Ingresa tu Contraseña" type="password" name="password" required>
                                 <div class="input-group-append">
                                     <span class="input-group-text">
                                         <i class="ni ni-eye" id="toggle-password"></i>
