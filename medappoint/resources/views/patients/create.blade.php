@@ -1,7 +1,9 @@
 @extends('layouts.panel')
 
 @section('content')
-
+@php
+use Illuminate\Support\Str;
+@endphp
 <div class="card shadow">
     <div class="card-header border-0">
         <div class="row align-items-center">
@@ -23,6 +25,7 @@
             </ul>
         </div>
         @endif
+
 
 
         <form action="{{ url('patients') }}" method="POST">
@@ -50,7 +53,7 @@
             </div>
             <div class="form-group">
                 <label for="password">Contraseña</label>
-                <input type="text" name="password" class="form-control" value="{{ str_random(6) }}">
+                <input type="text" name="password" class="form-control" value="{{  Str::random(6) }}">
             </div>
 
             <button type="submit" class="btn btn-primary">
@@ -59,5 +62,6 @@
         </form>
     </div>
 </div>
+
 
 @endsection

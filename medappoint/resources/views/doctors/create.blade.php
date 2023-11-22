@@ -3,8 +3,12 @@
 @section('styles')
 <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
+    
 @endsection
 
+@php
+use Illuminate\Support\Str;
+@endphp
 @section('content')
 
 <div class="card shadow">
@@ -54,7 +58,7 @@
             </div>
             <div class="form-group">
                 <label for="password">Contraseña</label>
-                <input type="text" name="password" class="form-control" value="{{ str_random(6) }}">
+                <input type="text" name="password" class="form-control" value="{{ Str::random(6) }}">
             </div>
 
             <div class="form-group">
@@ -75,9 +79,9 @@
     </div>
 </div>
 
+
 @endsection
 
 @section('scripts')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
 @endsection
-
