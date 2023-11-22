@@ -74,15 +74,12 @@
                 <div class="col-6 text-right">
                     <!-- Corrige la ruta del enlace para la recuperación de contraseña -->
                     <a href="https://myappointment.com.mx/user/access/reset" class="text-light">
-                        <small>Olvidaste tu contraseña?</small>
+                        <small>Olvidaste tu Contraseña?</small>
                     </a>
                 </div>
-
-
-
                 <div class="col-6 text-right">
                     <a href="{{ route('register') }}" class="text-light">
-                        <small>¿Aún no te has registrado?</small>
+                        <small>¿Aún no te has Registrado?</small>
                     </a>
                 </div>
             </div>
